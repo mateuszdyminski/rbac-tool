@@ -15,11 +15,11 @@ require (
 	github.com/olekukonko/tablewriter v0.0.0-20170122224234-a0225b3f23b5
 	github.com/spf13/cobra v1.7.0
 	google.golang.org/protobuf v1.31.0
-	k8s.io/api v0.29.0
-	k8s.io/apimachinery v0.29.0
-	k8s.io/apiserver v0.29.0
-	k8s.io/client-go v1.5.2
-	k8s.io/component-helpers v0.29.0
+	k8s.io/api v0.28.2
+	k8s.io/apimachinery v0.28.2
+	k8s.io/apiserver v0.28.2
+	k8s.io/client-go v0.28.2
+	k8s.io/component-helpers v0.28.2
 	k8s.io/klog v1.0.0
 	k8s.io/kubernetes v1.29.0
 	sigs.k8s.io/yaml v1.3.0
