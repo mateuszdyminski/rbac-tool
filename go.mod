@@ -14,14 +14,14 @@ require (
 	github.com/kylelemons/godebug v0.0.0-20170820004349-d65d576e9348
 	github.com/olekukonko/tablewriter v0.0.0-20170122224234-a0225b3f23b5
 	github.com/spf13/cobra v1.7.0
-	google.golang.org/protobuf v1.31.0
-	k8s.io/api v0.28.2
-	k8s.io/apimachinery v0.28.2
-	k8s.io/apiserver v0.28.2
-	k8s.io/client-go v0.28.2
-	k8s.io/component-helpers v0.28.2
+	google.golang.org/protobuf v1.33.0
+	k8s.io/api v0.29.3
+	k8s.io/apimachinery v0.29.3
+	k8s.io/apiserver v0.29.3
+	k8s.io/client-go v0.29.3
+	k8s.io/component-helpers v0.29.3
 	k8s.io/klog v1.0.0
-	k8s.io/kubernetes v1.29.0
+	k8s.io/kubernetes v1.29.3
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -41,7 +41,7 @@ require (
 	github.com/go-logr/logr v1.3.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
