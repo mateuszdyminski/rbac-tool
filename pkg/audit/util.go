@@ -201,9 +201,9 @@ func Output(w io.Writer, obj runtime.Object, format string) error {
 	var s *json.Serializer
 	switch format {
 	case "json":
-		s = json.NewSerializerWithOptions(json.DefaultMetaFactory, Scheme, Scheme, json.SerializerOptions{false, true, false})
+		s = json.NewSerializerWithOptions(json.DefaultMetaFactory, Scheme, Scheme, json.SerializerOptions{Yaml: false, Pretty: true, Strict: false})
 	case "yaml":
-		s = json.NewSerializerWithOptions(json.DefaultMetaFactory, Scheme, Scheme, json.SerializerOptions{true, false, false})
+		s = json.NewSerializerWithOptions(json.DefaultMetaFactory, Scheme, Scheme, json.SerializerOptions{Yaml: true, Pretty: false, Strict: false})
 	default:
 		return fmt.Errorf("unknown format: %s", format)
 	}

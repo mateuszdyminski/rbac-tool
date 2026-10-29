@@ -19,7 +19,6 @@ type Opts struct {
 	Outformat  string
 	ShowRules  bool
 	ShowLegend bool
-	ShowPSP    bool
 
 	IncludedNamespaces string
 	ExcludedNamespaces string
