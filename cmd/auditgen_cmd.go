@@ -203,7 +203,7 @@ func (a *AuditGenOpts) Run() error {
 
 	if len(attributesByUser) == 0 {
 		message := fmt.Sprintf("No audit events matched user %s", a.UserRegexFilter)
-		return fmt.Errorf(message)
+		return fmt.Errorf("%s", message)
 	}
 
 	klog.V(7).Infof("processing %v users", len(attributesByUser))
@@ -223,19 +223,19 @@ func (a *AuditGenOpts) Run() error {
 		defer f.Flush()
 
 		for _, obj := range generated.Roles {
-			fmt.Fprintln(f, "\n---\n")
+			fmt.Fprint(f, "\n---\n\n")
 			auditutil.Output(f, obj, a.OutputFormat)
 		}
 		for _, obj := range generated.ClusterRoles {
-			fmt.Fprintln(f, "\n---\n")
+			fmt.Fprint(f, "\n---\n\n")
 			auditutil.Output(f, obj, a.OutputFormat)
 		}
 		for _, obj := range generated.RoleBindings {
-			fmt.Fprintln(f, "\n---\n")
+			fmt.Fprint(f, "\n---\n\n")
 			auditutil.Output(f, obj, a.OutputFormat)
 		}
 		for _, obj := range generated.ClusterRoleBindings {
-			fmt.Fprintln(f, "\n---\n")
+			fmt.Fprint(f, "\n---\n\n")
 			auditutil.Output(f, obj, a.OutputFormat)
 		}
 	}
