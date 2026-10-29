@@ -82,6 +82,5 @@ rbac-tool viz --include-pods-only
 
 	flags.BoolVar(&opts.ShowLegend, "show-legend", false, "Whether to show the legend or not (for dot format)")
 	flags.BoolVar(&opts.ShowRules, "show-rules", true, "Whether to render RBAC access rules (e.g. \"get pods\") or not")
-	flags.BoolVar(&opts.ShowPSP, "show-psp", false, "Show Pod Security Policies")
 	return cmd
 }
